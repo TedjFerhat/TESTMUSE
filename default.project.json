@@ -114,6 +114,7 @@
         },
         "SignalBehavior": "Deferred",
         "StreamOutBehavior": "Opportunistic",
+        "StreamingEnabled": true,
         "StreamingIntegrityMode": "PauseOutsideLoadedArea",
         "WorldPivotData": {
           "OptionalCFrame": {
@@ -143,7 +144,7 @@
         }
       },
       "$attributes": {
-        "Rojo_Target_CurrentCamera": "55c974915cd412f00ae395aa000003e9"
+        "Rojo_Target_CurrentCamera": "29bc388f86548c240ae3ade600002da4"
       },
       "$ignoreUnknownInstances": true
     }

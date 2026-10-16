@@ -71,6 +71,11 @@ local function terrain(origin: CFrame)
 	t:FillBlock(CF(base + V(0, -2, 115)), V(90, 6, 70), M.Sandstone)
 	-- Star Watcher's rock shelf (north-west) with stepping stones
 	t:FillBlock(CF(base + V(-140, 6, 120)), V(26, 24, 26), M.Sandstone)
+
+	-- Flatten terrain at the arrival point so dunes don't bury it
+	local arrivalLocal = V(0, 0, -146)
+	t:FillBlock(CF(base + arrivalLocal + V(0, 25, 0)), V(28, 50, 28), M.Air) -- clear dunes above
+	t:FillBlock(CF(base + arrivalLocal + V(0, -1, 0)), V(28, 4, 28), M.Sand)   -- solid flat ground
 end
 
 -- One Watcher statue + its inscription stele.
