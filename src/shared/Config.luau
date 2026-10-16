@@ -10,7 +10,7 @@
 local Config = {}
 
 -- ── Player start ────────────────────────────────────────────────────────────
-Config.StartingCash = 100
+Config.StartingCash = 999999999
 -- Item IDs (see ItemCatalog) every brand-new player receives once.
 Config.StarterItems = { "clay_pot_cracked", "coin_bronze_worn" }
 

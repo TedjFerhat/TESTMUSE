@@ -233,6 +233,10 @@ end
 type LoadResult = { Status: "ok", Data: any } | { Status: "locked" } | { Status: "error", Message: string }
 
 local function tryLoad(key: string): LoadResult
+	-- In Studio without API access, skip DataStore entirely to avoid long hangs.
+	if RunService:IsStudio() then
+		return { Status = "error", Message = "StudioAccessToApisNotAllowed" }
+	end
 	local ds = getStore()
 	if not ds then
 		return { Status = "error", Message = storeUnavailableReason or "DataStore unavailable" }
@@ -271,6 +275,10 @@ end
 -- Returns true on success.
 local function writeProfile(profile: Profile, release: boolean): boolean
 	if profile.NoSave then
+		return true
+	end
+	-- In Studio, skip DataStore writes to avoid hangs.
+	if RunService:IsStudio() then
 		return true
 	end
 	local ds = getStore()
@@ -512,6 +520,10 @@ end
 
 -- true = real DataStores work; false = Studio without API access (local only).
 function PlayerDataService.IsDurable(): boolean
+	if RunService:IsStudio() then
+		durable = false
+		return false
+	end
 	while durable == nil do
 		task.wait(0.1)
 	end
