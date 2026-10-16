@@ -1,0 +1,151 @@
+{
+  "name": "MuseumTycoon",
+  "tree": {
+    "$className": "DataModel",
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0.27000001072883606,
+          0.25,
+          0.2199999988079071
+        ],
+        "Brightness": 2.5,
+        "ClockTime": 15.5,
+        "EnvironmentDiffuseScale": 0.6000000238418579,
+        "EnvironmentSpecularScale": 0.6000000238418579,
+        "FogColor": [
+          0.7529412508010864,
+          0.7529412508010864,
+          0.7529412508010864
+        ],
+        "GeographicLatitude": 0.0,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [
+          0.550000011920929,
+          0.5,
+          0.44999998807907104
+        ],
+        "Outlines": false,
+        "PrioritizeLightingQuality": true,
+        "SerializedOverrides": {
+          "BinaryString": ""
+        },
+        "ShadowSoftness": 0.20000000298023224,
+        "Technology": "ShadowMap",
+        "TimeOfDay": "15:30:00"
+      },
+      "$ignoreUnknownInstances": true
+    },
+    "ReplicatedStorage": {
+      "Shared": {
+        "$properties": {
+          "SerializedOverrides": {
+            "BinaryString": ""
+          }
+        },
+        "$path": "src/shared"
+      },
+      "$properties": {
+        "SerializedOverrides": {
+          "BinaryString": ""
+        }
+      },
+      "$ignoreUnknownInstances": true
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$properties": {
+          "SerializedOverrides": {
+            "BinaryString": ""
+          }
+        },
+        "$path": "src/server"
+      },
+      "$properties": {
+        "SerializedOverrides": {
+          "BinaryString": ""
+        }
+      },
+      "$ignoreUnknownInstances": true
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$properties": {
+            "SerializedOverrides": {
+              "BinaryString": ""
+            }
+          },
+          "$path": "src/client"
+        },
+        "$properties": {
+          "SerializedOverrides": {
+            "BinaryString": ""
+          }
+        },
+        "$ignoreUnknownInstances": true
+      },
+      "$properties": {
+        "AvatarJointUpgrade": "Enabled",
+        "CameraMaxZoomDistance": 128.0,
+        "CharacterBreakJointsOnDeath": false,
+        "CharacterUseJumpPower": false,
+        "SerializedOverrides": {
+          "BinaryString": ""
+        },
+        "UseImprovedCharacterEvents": {
+          "Enum": 0
+        }
+      },
+      "$ignoreUnknownInstances": true
+    },
+    "Workspace": {
+      "$properties": {
+        "PlayerCharacterDestroyBehavior": "Enabled",
+        "PlayerScriptsUseInputActionSystem": "Enabled",
+        "ReplicationFrequency": {
+          "Enum": 0
+        },
+        "ReplicationThroughput": {
+          "Enum": 0
+        },
+        "SerializedOverrides": {
+          "BinaryString": ""
+        },
+        "SignalBehavior": "Deferred",
+        "StreamOutBehavior": "Opportunistic",
+        "StreamingIntegrityMode": "PauseOutsideLoadedArea",
+        "WorldPivotData": {
+          "OptionalCFrame": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "orientation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        }
+      },
+      "$attributes": {
+        "Rojo_Target_CurrentCamera": "55c974915cd412f00ae395aa000003e9"
+      },
+      "$ignoreUnknownInstances": true
+    }
+  }
+}
